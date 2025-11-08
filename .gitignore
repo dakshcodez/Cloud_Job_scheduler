@@ -1,0 +1,51 @@
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+scheduler
+*.exe
+*.out
+*.app
+
+# Build artifacts
+*.a
+*.so
+*.dylib
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# Editor/IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# State files (optional - uncomment if you don't want to track saved states)
+# *.state
+# *.save
+
+# Temporary files
+*.tmp
+*.log
+*.bak
+
+# Core dumps
+core
+core.*
+
+# Valgrind output
+vgcore.*
+
+# CMake (if used in future)
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile.cmake
+
