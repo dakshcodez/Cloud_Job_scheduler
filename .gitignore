@@ -4,6 +4,7 @@
 
 # Executables
 scheduler
+scheduler.exe
 *.exe
 *.out
 *.app

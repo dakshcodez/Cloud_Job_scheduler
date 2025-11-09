@@ -1,0 +1,27 @@
+# Makefile for Windows (MinGW/MSYS2)
+# Usage: make -f Makefile.windows
+
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c11 -g
+TARGET = scheduler.exe
+SOURCES = main.c priority_queue.c hash_table.c node_list.c job_list.c scheduler.c persistence.c
+OBJECTS = $(SOURCES:.c=.o)
+HEADERS = structs.h priority_queue.h hash_table.h node_list.h job_list.h scheduler.h persistence.h
+
+.PHONY: all clean
+
+all: $(TARGET)
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(OBJECTS)
+
+%.o: %.c $(HEADERS)
+	$(CC) $(CFLAGS) -c $< -o $@
+
+clean:
+	rm -f $(OBJECTS) $(TARGET)
+
+install: $(TARGET)
+	@echo Build complete. Run $(TARGET) to start the simulator.
+
+

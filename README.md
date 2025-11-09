@@ -27,6 +27,8 @@ A comprehensive CPU scheduler simulator written in C that simulates a cloud comp
 
 ## Building
 
+### Linux / macOS / WSL
+
 ```bash
 make
 ```
@@ -37,6 +39,17 @@ To clean build artifacts:
 ```bash
 make clean
 ```
+
+### Windows
+
+See [WINDOWS.md](WINDOWS.md) for detailed Windows setup instructions.
+
+**Quick start options:**
+- **WSL (Recommended)**: Install WSL and use Linux commands above
+- **MinGW/MSYS2**: Use `build.bat` or `make -f Makefile.windows`
+- **Visual Studio**: Open project in VS and build
+
+For more details, see the [Windows Guide](WINDOWS.md).
 
 ## Usage
 
